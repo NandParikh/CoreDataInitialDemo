@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heN-ng-i3B">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pcP-rG-LjV">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zsH-gY-2wf" customClass="ViewController" customModule="CoreDataDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZe-H0-ZuO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-Pr-9e6">
+                                <rect key="frame" x="20" y="103" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nht-CI-Gyr"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSaveClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="59l-gU-RmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cd-4C-fe4">
+                                <rect key="frame" x="20" y="153" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zjp-yJ-TvM"/>
+                                </constraints>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="btnSaveClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="SSI-9f-O5B"/>
+                                    <action selector="btnUpdateClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="hfm-Gm-fjg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-Y9-HgI">
+                                <rect key="frame" x="20" y="211" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gKR-AG-wWK"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDeleteClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="eZx-z8-rwK"/>
+                                    <action selector="btnSaveClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="bNa-P1-2oQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiF-c4-qAR">
+                                <rect key="frame" x="20" y="263" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rVK-Gn-yd7"/>
+                                </constraints>
+                                <state key="normal" title="Fetch"/>
+                                <connections>
+                                    <action selector="btnFetchClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="ffG-GK-pqs"/>
+                                    <action selector="btnSaveClicked:" destination="zsH-gY-2wf" eventType="touchUpInside" id="qXJ-Dz-ZMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GiF-c4-qAR" firstAttribute="leading" secondItem="GzP-9S-srh" secondAttribute="leading" constant="20" id="8ts-2t-dgs"/>
+                            <constraint firstItem="GzP-9S-srh" firstAttribute="trailing" secondItem="eEt-Pr-9e6" secondAttribute="trailing" constant="20" id="D37-4Y-Ic6"/>
+                            <constraint firstItem="3Cd-4C-fe4" firstAttribute="leading" secondItem="GzP-9S-srh" secondAttribute="leading" constant="20" id="FBj-VC-VhC"/>
+                            <constraint firstItem="eEt-Pr-9e6" firstAttribute="leading" secondItem="GzP-9S-srh" secondAttribute="leading" constant="20" id="Ntp-IA-gyt"/>
+                            <constraint firstItem="GzP-9S-srh" firstAttribute="bottom" secondItem="GiF-c4-qAR" secondAttribute="bottom" constant="275" id="SMP-xt-EId"/>
+                            <constraint firstItem="GzP-9S-srh" firstAttribute="trailing" secondItem="LDg-Y9-HgI" secondAttribute="trailing" constant="20" id="Ywr-5u-qbS"/>
+                            <constraint firstItem="3Cd-4C-fe4" firstAttribute="top" secondItem="eEt-Pr-9e6" secondAttribute="bottom" constant="20" id="b7G-yu-nVI"/>
+                            <constraint firstItem="GzP-9S-srh" firstAttribute="trailing" secondItem="3Cd-4C-fe4" secondAttribute="trailing" constant="20" id="fmq-Sx-2w9"/>
+                            <constraint firstItem="LDg-Y9-HgI" firstAttribute="top" secondItem="3Cd-4C-fe4" secondAttribute="bottom" constant="28" id="hWc-YB-bYO"/>
+                            <constraint firstItem="eEt-Pr-9e6" firstAttribute="top" secondItem="GzP-9S-srh" secondAttribute="top" constant="39" id="i4O-Iu-u3F"/>
+                            <constraint firstItem="GzP-9S-srh" firstAttribute="trailing" secondItem="GiF-c4-qAR" secondAttribute="trailing" constant="20" id="mHY-7G-mb8"/>
+                            <constraint firstItem="GiF-c4-qAR" firstAttribute="top" secondItem="LDg-Y9-HgI" secondAttribute="bottom" constant="22" id="n8z-Ex-zeh"/>
+                            <constraint firstItem="LDg-Y9-HgI" firstAttribute="leading" secondItem="GzP-9S-srh" secondAttribute="leading" constant="20" id="pye-rl-D7c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GzP-9S-srh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QCw-jL-RaG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xs0-GX-gNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1144" y="-5468"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0oY-kb-BFI">
+            <objects>
+                <navigationController id="heN-ng-i3B" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mn7-dX-nkf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zsH-gY-2wf" kind="relationship" relationship="rootViewController" id="HEr-vk-DRF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIP-FG-yBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1961" y="-5468"/>
+        </scene>
+    </scenes>
+</document>
