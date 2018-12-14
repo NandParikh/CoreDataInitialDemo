@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  CoreDataDemo2
-//
-//  Created by Nand on 29/11/18.
-//  Copyright © 2018 Nand. All rights reserved.
-//
 
 import UIKit
 import CoreData
